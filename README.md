@@ -14,6 +14,9 @@ https://github.com/vesis84/kaldi-io-for-python
 - NumPy
 - TensorFlow
 
+## License
+Apache License, Version 2.0 ('LICENSE')
+
 ## Contact
 - If you have an extension to share, please create a pull request.
 - For feedback and suggestions, please create a GitHub 'Issue' in the project.
