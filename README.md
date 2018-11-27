@@ -27,4 +27,4 @@ Apache License, Version 2.0 ('LICENSE')
 ## Contact
 - If you have an extension to share, please create a pull request.
 - For feedback and suggestions, please create a GitHub 'Issue' in the project.
-- If you want to communicate with me, you can use my email: hsn(dot)zeinali<at>gmail(dot)com
+- If you want to communicate with me, you can use my email: hsn(dot)zeinali(at)gmail(dot)com
