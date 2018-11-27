@@ -13,6 +13,8 @@ https://github.com/vesis84/kaldi-io-for-python
 ## Usage
 For using the codes, you first should install Kaldi and clone the codes in egs/sre16 (or somewhere else that you want, by changing the symlinks to proper positions). You can use the previously processed data and start the recipe from stage 4 (archive generation).
 
+If you want to test different topology, you can add a subclass of Model to local/tf/models.py and overwrite the build_model function (in the file you can see several topologies). Then you just need to pass class name to  local/tf/train_dnn.py by changing --tf-model-class in local/tf/run_xvector.sh.
+
 
 ## Requirements
 - Python
