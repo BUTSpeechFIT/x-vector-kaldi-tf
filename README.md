@@ -15,6 +15,15 @@ For using the codes, you first should install Kaldi and clone the codes in egs/s
 
 If you want to test different topology, you can add a subclass of Model to local/tf/models.py and overwrite the build_model function (in the file you can see several topologies). Then you just need to pass class name to  local/tf/train_dnn.py by changing --tf-model-class in local/tf/run_xvector.sh.
 
+You can see some comparison of this implementation with Kaldi in terms of performance in the following paper. Also, you can find the effects of different tricks on the performance. We tried to keep all the useful tricks from the paper in the codes.
+```
+@article{zeinali2018improve,
+  title={How to Improve Your Speaker Embeddings Extractor in Generic Toolkits},
+  author={Zeinali, Hossein and Burget, Lukas and Rohdin, Johan and Stafylakis, Themos and Cernocky, Jan},
+  journal={arXiv preprint arXiv:1811.02066},
+  year={2018}
+}
+```
 
 ## Requirements
 - Python
