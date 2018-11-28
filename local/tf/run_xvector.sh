@@ -53,13 +53,13 @@ if [ ${stage} -le 4 ]; then
   local/tf/get_egs.sh --cmd "${train_cmd} --long 1 --scratch 1" \
     --nj 10 \
     --stage 0 \
-    --frames-per-iter 2000000000 \
+    --frames-per-iter 1000000000 \
     --frames-per-iter-diagnostic 1000000 \
     --min-frames-per-chunk 200 \
     --max-frames-per-chunk 400 \
-    --num-diagnostic-archives 1 \
+    --num-diagnostic-archives 3 \
     --minibatch-size ${minibatch_size} \
-    --num-repeats 10 \
+    --num-repeats 35 \
     "${data}" "${egs_dir}"
 fi
 # This chunk-size corresponds to the maximum number of frames the
