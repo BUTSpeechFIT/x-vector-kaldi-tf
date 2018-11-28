@@ -26,6 +26,7 @@ You can see some comparison of this implementation with Kaldi in terms of perfor
 ```
 
 ## Requirements
+- Kaldi from https://github.com/kaldi-asr/kaldi
 - Python
 - NumPy
 - TensorFlow
