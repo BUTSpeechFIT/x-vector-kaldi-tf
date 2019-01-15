@@ -14,7 +14,7 @@ stage=1
 train_stage=0
 use_gpu=true
 
-minibatch_size=128
+minibatch_size=64
 data=data/train
 nnet_dir=exp/xvector_nnet_1ha/
 egs_dir=exp/xvector_nnet_1ha/egs

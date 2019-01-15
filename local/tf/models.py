@@ -440,9 +440,9 @@ class ModelWithoutDropout(Model):
 
     def build_model(self, num_classes, input_feature_dim, output_dir, logger=None):
 
-        layer_sizes = [128, 128, 128, 128, 3 * 128]
-        kernel_sizes = [3, 3, 5, 1, 1]
-        embedding_sizes = [128, 128]
+        layer_sizes = [512, 512, 512, 512, 3 * 512]
+        kernel_sizes = [5, 5, 7, 1, 1]
+        embedding_sizes = [512, 512]
 
         if logger is not None:
             logger.info("Start building the model ...")

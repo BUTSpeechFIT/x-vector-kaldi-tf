@@ -141,6 +141,7 @@ if [ ${stage} -le 1 ]; then
     local/tf/create_egs.py \
       --prefix=train_subset \
       --num-repeats=8 --num-jobs=1 \
+      --minibatch-size=${minibatch_size} \
       --min-frames-per-chunk=${min_frames_per_chunk} \
       --max-frames-per-chunk=${max_frames_per_chunk} \
       --randomize-chunk-length=false \
@@ -155,6 +156,7 @@ if [ ${stage} -le 1 ]; then
     local/tf/create_egs.py \
       --prefix=valid \
       --num-repeats=8 --num-jobs=1 \
+      --minibatch-size=${minibatch_size} \
       --min-frames-per-chunk=${min_frames_per_chunk} \
       --max-frames-per-chunk=${max_frames_per_chunk} \
       --randomize-chunk-length=false \
