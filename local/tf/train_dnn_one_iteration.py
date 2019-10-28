@@ -115,7 +115,7 @@ def get_args():
                              "unnecessarily files. Before sending the scp file to this file, use "
                              "utils/filter_scp.pl to filer the overall scp feature file.")
 
-    parser.add_argument("--tar-file", type=str, dest='tar_file',
+    parser.add_argument("--tar-file", type=str, dest='tar_file', default='',
                         help="Specifies a tar file which contains the training data. Also, there must "
                              "ans npy file for labels with same name but with npy extension. If tar file "
                              "was given the scp and ranges file didn't used but at least one there two "
